@@ -15,7 +15,6 @@ p {
 
 #logo{
   width: 63px;
-  height: 63px;
 }
 
 .navbar {
@@ -48,12 +47,16 @@ p {
   text-decoration: none;
 }
 
+.link:hover , .link:focus{
+  color: #FFC5FD;
+}
+
 .container{
   margin-top: 130px;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 8% repeat(12, 1fr) 8%;
-  grid-template-rows: repeat(24, 120px);
+  grid-template-rows: repeat(24, 17vh);
   grid-template-areas: 
     ". A A A A A A . i i i i i ."
     ". a a a a a a . i i i i i ."
@@ -64,7 +67,7 @@ p {
     ". . . b b b b b b b b . . ."
     ". c c c c c c c c c c c c . "
     ". c c c c c c c c c c c c ."
-    ". . . . . . . . . . . . . ."
+    ". . . . . . d d . . . . . ."
     ". . . . . . . . . . . . . .";
 
 }
@@ -79,6 +82,7 @@ p {
 
 .illustration-i{
   grid-area: i;
+  width: 100%;
 }
 
 .Works-B{
@@ -96,16 +100,17 @@ p {
 
 .card{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: wrap;
+  justify-content: space-between;
   grid-area: c;
-  background: #FFFFFF;
-  border-radius: 2px;
+}
+
+.recentworks{
   width: 30%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.2s;
 }
 
-.recentworks-1{
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.2s;
-}
+.recentworks:hover{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 4px  4px rgba(0,0,0,0.24);
+} 
