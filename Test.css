@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  height: 70px;
+  margin: auto 0;
+}
+
+/* Typography */
+
+h1{
+  font-weight: 400;
+}
+
+nav ul{
+
+}
+
+nav li{
+  
+}
