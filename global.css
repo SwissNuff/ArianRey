@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
   background-color: #ffffff;
+  text-decoration: none;
 }
 
 h2 {
@@ -16,10 +21,10 @@ p {
 #logo {
   width: 63px;
 }
-
+/* navigation */
 .navbar {
   position: fixed;
-  height: 83px;
+  height: 80px;
   border-bottom: 1px solid #d6d6d6;
   display: grid;
   background-color: white;
@@ -28,29 +33,39 @@ p {
   align-items: center;
 
   font-family: montserrat, sans-serif;
-
-  grid-template-columns: 8% 7% 50% auto auto auto auto 8%;
+  grid-template-columns: 8% 7% 45% auto 8%;
 }
 
 .logotype {
-  font-size: 24px;
+  font-size: 1.6rem;
   line-height: 29px;
   text-decoration: none;
   color: #000000;
 }
 
-.link {
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
+.links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.link-item {
   color: #000000;
   text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .link:hover,
 .link:focus {
   color: #ffc5fd;
 }
+
+/* body */
 
 .container {
   margin-top: 130px;
@@ -59,13 +74,13 @@ p {
   grid-template-columns: 8% repeat(12, 1fr) 8%;
   grid-template-rows: repeat(24, 16vh);
   grid-template-areas:
-    ". A A A A A A . i i i i i ."
-    ". a a a a a a . i i i i i ."
-    ". a a a a a a . i i i i i ."
-    ". . . . . . . . i i i i i ."
+    ". A A A A A A A i i i i i i"
+    ". a a a a a a . i i i i i i"
+    ". a a a a a a . i i i i i i"
+    ". . . . . . . . i i i i i i"
     ". . . . . . . . . . . . . ."
-    ". . . B B B B B B B B . . ."
-    ". . . b b b b b b b b . . ."
+    ". B B B B B B B B B B B B ."
+    ". b b b b b b b b b b b b ."
     ". c c c c c c c c c c c c ."
     ". c c c c c c c c c c c c ."
     ". . . . . . d d . . . . . ."
@@ -100,24 +115,39 @@ p {
 }
 
 .card {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   grid-area: c;
+  display: flex;
 }
 
 .recentworks {
-  width: 30%;
+  height: 220 px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.2s;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recentworks:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 4px 4px rgba(0, 0, 0, 0.24);
 }
 
-@media screen and (max-width: 1100px) {
+.image-cover {
+  margin: 0;
+  padding: 1;
+  width: 100%;
+  height: 30px;
+}
+.recentworks-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 950px) {
   .container {
+    margin-top: 10px;
     grid-template-areas:
       ". A A A A A A A A A A A A ."
       ". a a a a a a a a a a a a ."
@@ -126,9 +156,12 @@ p {
       ". . i i i i i i i i i i . ."
       ". . i i i i i i i i i i . ."
       ". . i i i i i i i i i i . ."
+      ". . i i i i i i i i i i . ."
       ". . . . . . . . . . . . . ."
-      ". . . B B B B B B B B . . ."
-      ". . . b b b b b b b b . . ."
+      ". B B B B B B B B B B B B ."
+      ". b b b b b b b b b b b b ."
+      ". c c c c c c c c c c c c ."
+      ". c c c c c c c c c c c c ."
       ". c c c c c c c c c c c c ."
       ". c c c c c c c c c c c c ."
       ". . . . . . d d . . . . . ."
@@ -136,18 +169,7 @@ p {
   }
 
   .navbar {
-    position: fixed;
-    height: 83px;
-    border-bottom: 1px solid #d6d6d6;
-    display: grid;
-    background-color: white;
-    width: 100%;
-    top: 0;
-    align-items: center;
-
-    font-family: montserrat, sans-serif;
-
-    grid-template-columns: 8% 7% auto auto auto auto 8%;
+    display: none;
   }
   .logotype,
   .link {

@@ -1,11 +1,18 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\..\\..\\Desktop\\ARIAN\\Computer Science\\Coding"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\..\\Desktop\\ARIAN\\Computer Science\\Coding"
+    },
+    {
+      "path": "..\\Sample Sites"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "iostream": "cpp"
+    }
+  }
 }
