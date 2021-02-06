@@ -97,7 +97,7 @@ p {
 
 .illustration-i {
   grid-area: i;
-  height: 90%;
+  max-width: 100%;
   object-fit: cover;
   margin: auto auto auto auto;
 }
@@ -122,8 +122,7 @@ p {
 }
 
 .recentworks {
-  width: auto;
-  max-width: 300px;
+  max-width: 340px;
   height: 220 px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.2s;
@@ -162,7 +161,6 @@ p {
       ". . i i i i i i i i i i . ."
       ". . i i i i i i i i i i . ."
       ". . i i i i i i i i i i . ."
-      ". . . . . . . . . . . . . ."
       ". B B B B B B B B B B B B ."
       ". b b b b b b b b b b b b ."
       ". c c c c c c c c c c c c ."
@@ -183,5 +181,13 @@ p {
   .logotype,
   .link {
     display: none;
+  }
+  .Introduction-A,
+  .Works-B {
+    font-size: 2.5rem;
+  }
+  .introduction-a,
+  .works-b {
+    font-size: 1.8rem;
   }
 }
