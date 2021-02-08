@@ -162,6 +162,7 @@ img {
   height: 78%;
 }
 .recentworks-image {
+  margin: auto;
   object-fit: cover;
   height: 100%;
   border-top-left-radius: 6px;
@@ -192,6 +193,26 @@ img {
   font-size: 1rem;
   border-radius: 2px;
   margin-right: 1%;
+}
+
+.recentworks-button {
+  background-color: transparent; /* Green */
+  border: 3px solid #de57d9;
+  height: 3.5rem;
+  padding: 0 100px;
+  color: #de57d9;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 65px;
+}
+
+.recentworks-button:hover {
+  background-color: #de57d9; /* Green */
+  color: white;
 }
 
 .tag-name {
