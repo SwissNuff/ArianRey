@@ -12,10 +12,17 @@ h2 {
   color: #000000;
   font-family: montserrat, sans-serif;
   font-weight: bold;
+  font-size: 3rem;
 }
 
 p {
   font-family: raleway, sans-serif;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 #logo {
@@ -74,11 +81,11 @@ p {
   grid-template-columns: 8% repeat(12, 1fr) 8%;
   grid-template-rows: repeat(24, 16vh);
   grid-template-areas:
-    ". A A A A A A A i i i i i i"
-    ". a a a a a a . i i i i i i"
-    ". a a a a a a . i i i i i i"
-    ". . . . . . . . i i i i i i"
-    ". . . . . . . . . . . . . ."
+    ". A A A A A A A A A A A A ."
+    ". A A A A A A A A A A A A ."
+    ". A A A A A A A A A A A A ."
+    ". A A A A A A A A A A A A ."
+    ". A A A A A A A A A A A A ."
     ". B B B B B B B B B B B B ."
     ". b b b b b b b b b b b b ."
     ". c c c c c c c c c c c c ."
@@ -86,32 +93,30 @@ p {
     ". . . . . . d d . . . . . ."
     ". . . . . . . . . . . . . .";
 }
-.Introduction-A {
+.introduction {
   grid-area: A;
-  font-size: 48px;
-}
-.introduction-a {
-  grid-area: a;
-  font-size: 30px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
 }
 
-.illustration-i {
-  grid-area: i;
-  max-width: 100%;
-  object-fit: cover;
-  margin: auto auto auto auto;
+.article-introduction {
+  max-width: 600px;
+  min-width: 510px;
+}
+
+.introduction-illustration {
+  min-width: 350px;
 }
 
 .Works-B {
   grid-area: B;
   text-align: center;
-  font-size: 40px;
 }
 
 .works-b {
   grid-area: b;
   text-align: center;
-  font-size: 24px;
 }
 
 .card {
@@ -149,18 +154,17 @@ p {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .container {
     margin-top: 10px;
-    grid-template-areas:
+    /* grid-template-areas:
       ". A A A A A A A A A A A A ."
-      ". a a a a a a a a a a a a ."
-      ". a a a a a a a a a a a a ."
-      ". . . . . . . . . . . . . ."
-      ". . i i i i i i i i i i . ."
-      ". . i i i i i i i i i i . ."
-      ". . i i i i i i i i i i . ."
-      ". . i i i i i i i i i i . ."
+      ". A A A A A A A A A A A A ."
+      ". A A A A A A A A A A A A ."
+      ". A A A A A A A A A A A A ."
+      ". A A A A A A A A A A A A ."
+      ". A A A A A A A A A A A A ."
+      ". A A A A A A A A A A A A ."
       ". B B B B B B B B B B B B ."
       ". b b b b b b b b b b b b ."
       ". c c c c c c c c c c c c ."
@@ -168,11 +172,21 @@ p {
       ". c c c c c c c c c c c c ."
       ". c c c c c c c c c c c c ."
       ". . . . . . d d . . . . . ."
-      ". . . . . . . . . . . . . .";
+      ". . . . . . . . . . . . . ."; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: auto auto;
   }
-
-  .recentworks {
-    max-width: 700px;
+  .introduction {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .article-introduction,
+  .introduction-illustration {
+    min-width: 0px;
   }
 
   .navbar {
@@ -182,12 +196,13 @@ p {
   .link {
     display: none;
   }
-  .Introduction-A,
-  .Works-B {
+  .recentworks {
+    max-width: 700px;
+  }
+  h2 {
     font-size: 2.5rem;
   }
-  .introduction-a,
-  .works-b {
-    font-size: 1.8rem;
+  p {
+    font-size: 2rem;
   }
 }
