@@ -176,7 +176,7 @@ img {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    width: 90%;
+    width: 86%;
     margin: auto auto;
   }
   .introduction {
@@ -184,11 +184,14 @@ img {
     justify-content: space-around;
     margin-bottom: 20px;
   }
-  .article-introduction,
-  .introduction-illustration {
+  .article-introduction {
     min-width: 0px;
   }
-
+  .introduction-illustration {
+    min-width: 0px;
+    width: 80%;
+    margin: auto auto;
+  }
   .navbar {
     display: none;
   }
@@ -200,9 +203,9 @@ img {
     max-width: 700px;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
