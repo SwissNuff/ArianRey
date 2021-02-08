@@ -156,23 +156,7 @@ img {
 }
 @media screen and (max-width: 1000px) {
   .container {
-    margin-top: 10px;
-    /* grid-template-areas:
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". A A A A A A A A A A A A ."
-      ". B B B B B B B B B B B B ."
-      ". b b b b b b b b b b b b ."
-      ". c c c c c c c c c c c c ."
-      ". c c c c c c c c c c c c ."
-      ". c c c c c c c c c c c c ."
-      ". c c c c c c c c c c c c ."
-      ". . . . . . d d . . . . . ."
-      ". . . . . . . . . . . . . ."; */
+    padding-top: 80px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -182,14 +166,14 @@ img {
   .introduction {
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
   }
   .article-introduction {
     min-width: 0px;
   }
   .introduction-illustration {
     min-width: 0px;
-    width: 80%;
+    width: 70%;
     margin: auto auto;
   }
   .navbar {
@@ -203,7 +187,8 @@ img {
     max-width: 700px;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0;
   }
   p {
     font-size: 1rem;
