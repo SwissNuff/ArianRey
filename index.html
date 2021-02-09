@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- navigation -->
-    <section class="navbar">
+    <div class="navbar">
       <div class="leftside"></div>
       <img id="logo" src="assets/logo.svg" />
       <a class="logotype" href="#">ARIAN REY</a>
@@ -25,11 +25,11 @@
         <li><a class="link-item" href="#contact">Contact</a></li>
       </ul>
       <div class="rightside"></div>
-    </section>
+    </div>
     <!-- navigation end -->
     <div class="container">
       <!-- introduction -->
-      <div class="introduction">
+      <section class="introduction">
         <article class="article-introduction">
           <h2 class="introduction-header">Hi there! I'm Arian</h2>
           <p class="introduction-body">
@@ -42,66 +42,194 @@
         <div class="introduction-illustration">
           <img src="assets/arian-illustration-1.png" />
         </div>
-      </div>
+      </section>
+
       <!-- recentworks -->
-      <h3 class="Works-B">Recent Works</h2>
-      <p class="works-b">
-        Here are some of the projects I'm currently working on
-      </p>
-      <div class="card">
-        <div class="recentworks">
-          <div class="image-cover">
-            <img class="recentworks-image" src="assets/ethlantis.png" />
-          </div>
-          <div class="tag">
-          <h3 class="card-header">Ethlantis</h3>
-          <div class="tag-container">
-            <div class="tag-button">
-              <p class="tag-name">Website</p> 
+      <section class="recentworks">
+        <h2 class="recentworks-header">Recent Works</h2>
+        <p class="recentworks-body">
+          Here are some of the projects I'm currently working on
+        </p>
+        <div class="card">
+          <div class="card-item">
+            <div class="image-cover">
+              <img class="recentworks-image" src="assets/ethlantis.png" />
             </div>
-            <div class="tag-button">
-              <p class="tag-name">UX/UI Design</p> 
+            <div class="tag">
+              <h3 class="card-header">Ethlantis</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">Website</p>
+                </div>
+                <div class="tag-button">
+                  <p class="tag-name">UX/UI Design</p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="card-item">
+            <div class="image-cover">
+              <img class="recentworks-image" src="assets/incentivize.JPG" />
+            </div>
+            <div class="tag">
+              <h3 class="card-header">Incentivize</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">Mobile app</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="image-cover">
+              <img class="recentworks-image" src="assets/placeholder.JPG" />
+            </div>
+            <div class="tag">
+              <h3 class="card-header">Hangman</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">C++</p>
+                </div>
+                <div class="tag-button">
+                  <p class="tag-name">Mini-project</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="recentworks">
-          <div class="image-cover">
-            <img class="recentworks-image" src="assets/incentivize.JPG" />
+        <button class="recentworks-button">
+          <span>SEE MORE</span>
+        </button>
+      </section>
+      <!-- Blog Start -->
+      <section class="blog">
+        <div class="blog-heading">
+          <div class="blog-left-heading">
+            <h2>Blogs</h2>
+            <a class="hover-effect" href="#blog">READ MORE</a>
           </div>
-          <div class="tag">
-          <h3 class="card-header">Incentivize</h3>
-          <div class="tag-container">
-            <div class="tag-button">
-              <p class="tag-name">Mobile app</p> 
-            </div>
-          </div>
-          </div>
-        </div>        
-        <div class="recentworks">
-          <div class="image-cover">
-            <img class="recentworks-image" src="assets/placeholder.JPG" />
-          </div>
-          <div class="tag">
-          <h3 class="card-header">Hangman</h3>
-          <div class="tag-container">
-            <div class="tag-button">
-              <p class="tag-name">C++</p> 
-            </div>
-            <div class="tag-button">
-              <p class="tag-name">Mini-project</p> 
-            </div>
-          </div>
-          </div>
-
+          <h3 class="blog-right-heading">
+            Since the world might need to hear what I have to say
+          </h3>
         </div>
-                  <button class="recentworks-button">
-        <span>SEE MORE</span>
-      </button>
+        <div class="blog-container">
+          <div class="blog-item">
+            <div class="blog-info">
+              <h3 class="blog-date">April 3, 2020</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">Blog</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-article">
+              <h3 class="article-header">My Current Design Process</h3>
+              <p class="article-body">
+                Following are the steps of my current design process
+              </p>
+            </div>
+            <div class="article-image">
+              <img class="article-image-cover" src="assets/incentivize.JPG" />
+            </div>
+          </div>
+          <!-- blog item -->
+          <div class="blog-item">
+            <div class="blog-info">
+              <h3 class="blog-date">April 3, 2020</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">Blog</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-article">
+              <h3 class="article-header">My Current Design Process</h3>
+              <p class="article-body">
+                Following are the steps of my current design process
+              </p>
+            </div>
+            <div class="article-image">
+              <img class="article-image-cover" src="assets/placeholder.JPG" />
+            </div>
+          </div>
+          <!-- blog item -->
+          <div class="blog-item">
+            <div class="blog-info">
+              <h3 class="blog-date">April 3, 2020</h3>
+              <div class="tag-container">
+                <div class="tag-button">
+                  <p class="tag-name">Blog</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-article">
+              <h3 class="article-header">My Current Design Process</h3>
+              <p class="article-body">
+                Following are the steps of my current design process
+              </p>
+            </div>
+            <div class="article-image">
+              <img class="article-image-cover" src="assets/placeholder.JPG" />
+            </div>
+          </div>
+          <!-- blog item -->
+        </div>
+        <!-- blog container -->
+      </section>
+      <section class="about">
+        <div class="about-illustration">
+          <img src="assets/Cutout Backdrop.png" />
+        </div>
+        <div class="about-container">
+          <h3 class="about-heading">About Me</h2>
+          <h3 class="subheading">Who is Arian Rey?</h3>
+          <p class="about-body">
+            Honestly, she doesn't really know also. But superficially, she is an
+            aspiring computer scientist who sometimes draw and drinks tea.<br /><br />She
+            claims that she likes to run be it on a beach, field, city, or away
+            from her problems.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-article">
+          <h2 class="contact-header">Want to work together?</h2>
+          <p>
+            Hit me up. I always like a good challenge and a fellow
+            accountability partner. Honestly, I just want to meet other people
+            and work with them, so you'll be doing me a favor.
+          </p>
+          <a class="hover-effect">arian.ismyname@gmail.com</a>
 
+          <h3 class="subheading-gray">Say Hi!</h3>
+          <div class="socmed-icons">
+            <svg width="48px" height="48px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><title>logo-email</title><path d="M31.91,54.27H9.4a5.75,5.75,0,0,1-4.17-1.6A5.52,5.52,0,0,1,3.52,48.8c0-.61,0-1.22,0-1.84V14.66A5.6,5.6,0,0,1,5.92,9.84a5.29,5.29,0,0,1,3.19-1H54.68a5.63,5.63,0,0,1,5.6,4.95,7.34,7.34,0,0,1,0,.81q0,17,0,33.91a5.59,5.59,0,0,1-2.61,4.9,5.78,5.78,0,0,1-3.29.9Zm-25-34.63v.41q0,13.87,0,27.77a4.79,4.79,0,0,0,0,.93,2.66,2.66,0,0,0,2.84,2.1H53.9a2.64,2.64,0,0,0,2-.86,3,3,0,0,0,.71-2.14V19.66l-.25.15L40.2,31.33A14.24,14.24,0,0,1,30.42,34a14,14,0,0,1-6.9-2.58Q16,26.13,8.57,20.8Zm25-7.39H9.6a2.6,2.6,0,0,0-2.55,1.89,7.36,7.36,0,0,0-.11,1.16.5.5,0,0,0,.26.52q1.87,1.32,3.74,2.65,7.23,5.1,14.44,10.22a11.07,11.07,0,0,0,13.13,0q8.84-6.28,17.7-12.54c.72-.51.73-.51.68-1.38a2.57,2.57,0,0,0-2-2.42,5.76,5.76,0,0,0-1-.06Z"/></svg>
+            <svg width="48px" height="48px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;}.cls-2{fill-rule:evenodd;}</style></defs><title>logo-twitter</title><rect class="cls-1" width="24" height="24"/><path class="cls-2" d="M6.53,20.93H18.6a2.8,2.8,0,0,0,2.79-2.79V6.07A2.79,2.79,0,0,0,18.6,3.28H6.53A2.79,2.79,0,0,0,3.74,6.07V18.14A2.79,2.79,0,0,0,6.53,20.93ZM4.94,6.07A1.59,1.59,0,0,1,6.53,4.48H18.6a1.59,1.59,0,0,1,1.59,1.59V18.14a1.59,1.59,0,0,1-1.59,1.59H6.53a1.59,1.59,0,0,1-1.59-1.59ZM16.62,9.15a4.45,4.45,0,0,0,1.25-.34A4.41,4.41,0,0,1,16.77,10a2.53,2.53,0,0,1,0,.28,6.19,6.19,0,0,1-9.53,5.21,4.4,4.4,0,0,0,3.22-.9,2.2,2.2,0,0,1-2-1.52,1.84,1.84,0,0,0,.41,0A2.12,2.12,0,0,0,9.42,13a2.18,2.18,0,0,1-1.74-2.14v0a2.18,2.18,0,0,0,1,.27A2.17,2.17,0,0,1,8,8.19a6.19,6.19,0,0,0,4.49,2.28,2.07,2.07,0,0,1-.05-.5A2.18,2.18,0,0,1,16.2,8.48,4.44,4.44,0,0,0,17.58,8,2.16,2.16,0,0,1,16.62,9.15Z"/></svg>
+            <svg width="48px" height="48px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;}.cls-2{fill-rule:evenodd;}</style></defs><title>logo-dribble</title><rect class="cls-1" width="24" height="24"/><path class="cls-2" d="M15,3.55A9,9,0,0,0,6.72,4.77,9,9,0,0,0,3,11.56c0,.16,0,.33,0,.5a9,9,0,0,0,11.84,8.53h0a9,9,0,0,0,6-6.88A9.29,9.29,0,0,0,21,12.05,9,9,0,0,0,15,3.55Zm4.85,8.5c0,.06,0,.12,0,.18a9.84,9.84,0,0,0-5,.52A13.58,13.58,0,0,0,13.2,9.47,9,9,0,0,0,15.26,5,7.8,7.8,0,0,1,19.8,12.05ZM14.11,4.56a7.75,7.75,0,0,1-1.61,3.9A11.57,11.57,0,0,0,8.39,5.14a7.61,7.61,0,0,1,5.72-.58ZM7.18,5.94a10.23,10.23,0,0,1,4.48,3.42,7.72,7.72,0,0,1-5.3,2.1,7.79,7.79,0,0,1-2.1-.31A7.7,7.7,0,0,1,7.18,5.94Zm-3,6.45a9,9,0,0,0,2.14.26,8.86,8.86,0,0,0,6-2.29,12.25,12.25,0,0,1,1.33,2.89,9.81,9.81,0,0,0-4.84,5.92A7.83,7.83,0,0,1,4.22,12.39Zm6.1,7.28L10,19.58a8.62,8.62,0,0,1,4-5.12h0a14.21,14.21,0,0,1,.3,2.9,14.25,14.25,0,0,1-.18,2.18A7.83,7.83,0,0,1,10.32,19.67Zm5.07-.59a16,16,0,0,0,.11-1.71,15.93,15.93,0,0,0-.32-3.14c0-.1-.06-.2-.08-.3a8.63,8.63,0,0,1,4.59-.49.07.07,0,0,1,0,.05A7.82,7.82,0,0,1,15.39,19.08Z"/></svg>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form method="post" action="#">
+              <a>Name</a>
+              <div class="form form-name">
+                <input type="text" name="name" id="name" value="" />
+              </div>
+              <a>Email</a>
+              <div class="form form-email">
+                <input type="email" name="email" id="email" value="" />
+              </div>
+              <!-- Break -->
+              <a>Message</a>
+              <div class="form form-message">
+                <textarea name="textarea" id="textarea" rows="6"></textarea>
+              </div>
+                <input type="submit" value="Send Message " class="primary" />
+
+          </form>
+        </div>
+      </section>
     </div>
-
-
-
+    <!-- div container -->
   </body>
 </html>
