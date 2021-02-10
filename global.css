@@ -237,6 +237,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .blog-right-heading {
