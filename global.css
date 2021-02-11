@@ -56,10 +56,20 @@ a {
 }
 
 section {
-  margin-top: 15vh;
+  margin-top: 12vh;
   min-height: 75vh;
 }
 
+.active-padding {
+  padding: 7vh 0;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
 /* navigation */
 .navbar {
   position: fixed;
@@ -113,10 +123,13 @@ section {
 
 .link-item:hover,
 .link-item:focus {
-  color: #ffc5fd;
+  color: #de57d9;
   transition-duration: 0.2s;
 }
 
+.active {
+  color: #de57d9;
+}
 /* body */
 .container {
   padding: 80px 0 0 0;
